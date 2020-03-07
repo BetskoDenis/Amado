@@ -1,0 +1,24 @@
+.cart_total
+    h4 Cart Total
+    .cart_total_line
+        span Subtotal
+        span $140.00
+    .cart_total_line
+        span Delivery:
+        span Free
+    .cart_total_line
+        span Total:
+        span $140
+    .cart_total_line
+        h6 Доставка
+        input(type='radio' name='delivery')#new_mail
+        label(for="new_mail") Новая почта
+        input(type='radio' name='delivery')#ukr_mail
+        label(for="ukr_mail") Укр почта
+    .cart_total_line.last
+        h6 Оплата
+        input(type='radio' name='pay')#cash
+        label(for="cash") Наличка
+        input(type='radio' name='pay')#card
+        label(for="card") Карта
+    button(type="submit").button_cart Checkout

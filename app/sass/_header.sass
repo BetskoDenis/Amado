@@ -1,0 +1,148 @@
+header
+  .mobile_header__wrapper
+    height: 70px
+    position: fixed
+    width: 100%
+    top: 0
+    background-color: rgba(255, 255, 255, .7)
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+    z-index: 10
+    display: none
+    justify-content: space-between
+    align-items: center
+    padding: 0 30px
+    .header_logo_mobile
+      height: 28px
+      width: 70px
+      display: block
+      img
+        height: 100%
+        width: 100%
+        object-fit: contain
+    .burger_button
+      width: 30px
+      height: 20px
+      display: flex
+      align-items: center
+      position: relative
+      cursor: pointer
+      span
+        display: block
+        width: 30px
+        height: 3px
+        background-color: rgba(251, 183, 16, 1)
+        transition: width .5s
+      &:before
+        content: ""
+        position: absolute
+        top: 0
+        width: 30px
+        height: 3px
+        background-color: rgba(251, 183, 16, 1)
+        transition: transform .5s
+      &:after
+        content: ""
+        position: absolute
+        bottom: 0
+        width: 30px
+        height: 3px
+        background-color: rgba(251, 183, 16, 1)
+        transition: transform .5s
+    .burger_button.active
+      span
+        width: 0
+      &:before
+        transform: rotate(45deg) translateY(12px)
+      &:after
+        transform: rotate(-45deg) translateY(-12px)
+    @media(max-width: 680px)
+      display: flex
+  .header__wrapper.open
+    opacity: 1
+    transform: translateX(0)
+    z-index: 20
+    transition: opacity .3s, transform .3s
+  .header__wrapper
+    max-width: 320px
+    min-height: 110vh
+    padding: 60px 75px
+    background-color: rgba(255, 255, 255, 1)
+    transition: opacity .3s, transform .3s
+    transform: translateX(0)
+    .header_logo
+      display: block
+      height: 55px
+      width: 170px
+      margin-bottom: 100px
+      img
+        height: 100%
+        width: 100%
+        object-fit: contain
+
+    .header_main_menu
+      margin-bottom: 30px
+      ul
+        li
+          cursor: pointer
+
+          a
+            display: block
+            position: relative
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 14px
+            color: rgba(19, 18, 18, 1)
+            transition: color .5s
+            line-height: .9
+            padding: 20px 0
+            &:before
+              content: ""
+              position: absolute
+              top: calc(50% - 3px)
+              left: -75px
+              height: 3px
+              width: 0
+              background-color: rgba(251, 183, 16, 1)
+              transition: width .5s
+          &:hover a
+            color: rgba(251, 183, 16, 1)
+          &:hover :before
+            width: 30px
+    .button_block
+      display: flex
+      flex-direction: column
+      margin-bottom: 100px
+    .header_second_menu
+      ul
+        li
+          display: flex
+          align-items: center
+          img
+            margin-right: 10px
+          a
+            text-decoration: none
+            color: rgba(19, 18, 18, 1)
+            font-size: 16px
+            padding: 15px 0
+            text-transform: uppercase
+            transition: color .5s
+            &:hover
+              color: rgba(251, 183, 16, 1)
+          span
+            color: rgba(158, 158, 158, 1)
+
+    .header_social_block
+      a
+        height: 20px
+        width: 20px
+        img
+          height: 100%
+          width: 100%
+          object-fit: contain
+          position: relative
+    @media(max-width: 680px)
+      position: absolute
+      opacity: 0
+      transform: translateX(-100%)
+      transition: opacity .3s, transform .3s
+

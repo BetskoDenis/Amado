@@ -1,0 +1,108 @@
+footer
+  position: relative
+  top: 0
+  transition: top .3s
+  .footer_top_section
+    background-color: rgba(60, 60, 60, 1)
+    padding: calc(50px + 3.64vw) 0 calc(50px + 1vw) 0
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .text_block
+      flex: 1 1 50%
+      min-width: 280px
+      max-width: 650px
+      padding: 0 20px
+      margin-bottom: 50px
+      h2
+        font-size: 36px
+        color: rgba(255, 255, 255, 1)
+        margin-bottom: 15px
+        span
+          color: rgba(251, 183, 16, 1)
+      p
+        color: rgba(179, 177, 177, 1)
+        font-size: 16px
+        line-height: 1.9
+    .email_block
+      flex:  1 1 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      min-width: 280px
+      max-width: 600px
+      padding: 0 20px
+      input
+        height: 50px
+        max-width: 320px
+        width: 100%
+        outline: none
+        border: none
+        padding: 0 30px
+        font-style: italic
+      button
+        background-color: rgba(251, 183, 16, 1)
+        border: none
+        outline: none
+        height: 50px
+        width: 125px
+        color: rgba(255, 255, 255, 1)
+        cursor: pointer
+  .footer_bottom_section
+    background-color: rgba(37, 37, 37, 1)
+    padding: calc(50px + 3.64vw) 0 calc(50px + 1vw) 0
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+    .logo_footer_block
+      flex: 1 1 50%
+      min-width: 280px
+      max-width: 600px
+      margin-bottom: 50px
+      padding: 0 20px
+
+
+      @media(max-width: 710px)
+        display: flex
+        justify-content: center
+      .footer_logo
+        flex: 1 1 50%
+        display: block
+        width: 140px
+        height: 55px
+        img
+          height: 100%
+          width: 100%
+          object-fit: contain
+    .footer_menu
+      flex: 1 1 50%
+      min-width: 280px
+      max-width: 600px
+      display: flex
+      align-items: center
+      padding: 0 20px
+
+      ul
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        @media(max-width: 710px)
+          flex-wrap: wrap
+          justify-content: center
+        li
+          margin-right: 10px
+
+
+          a
+            text-decoration: none
+            color: rgba(255, 255, 255, 1)
+            text-transform: uppercase
+            transition: color .5s
+            font-size: 14px
+            &:hover
+              color: rgba(251, 183, 16, 1)
+.on_search footer
+  top: 260px
+

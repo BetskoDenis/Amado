@@ -1,0 +1,45 @@
+.checkout_main_content
+  flex: 1 1 30%
+  margin-right: 20px
+  .checkout_form
+    display: flex
+    flex-wrap: wrap
+    input
+      flex: 1 1 100%
+      border: none
+      height: 40px
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      background-color: rgba(245, 247, 250, 1)
+      padding: 0 10px
+      outline: none
+    input.left
+      flex: 1 1 calc(50% - 20px)
+      margin-right: 10px
+    input.right
+      flex: 1 1 calc(50% - 20px)
+      margin-left: 10px
+
+    textarea
+      width: 100%
+      background-color: rgba(245, 247, 250, 1)
+      min-height: 200px
+      border: none
+      padding: 25px
+      font-size: 16px
+      margin-bottom: 20px
+    .new_acc
+      display: flex
+      width: 100%
+      justify-content: start
+      align-items: center
+      #create_account
+        height: 20px
+        width: 20px
+        flex: 1 1 10%
+        margin-bottom: 0
+        cursor: pointer
+      label
+        flex: 1 1 90%
+        cursor: pointer

@@ -1,0 +1,113 @@
+.shop_menu.open
+  display: block
+  width: 230px
+  transition: all .3s
+  transform: translate(0)
+  z-index: 11
+  opacity: 1
+  position: absolute
+  .close_btn
+    position: absolute
+    top: 0
+    right: 0
+    height: 40px
+    width: 40px
+    background-color: rgba(251, 183, 16, 1)
+    display: none
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    transition: transform .3s
+
+    &:hover
+      transform: scale(.95)
+    span
+      height: 3px
+      width: 20px
+      background-color: rgba(255, 255, 255, 1)
+      &:nth-child(1)
+        transform: rotate(45deg) translateY(2px)
+      &:nth-child(2)
+        transform: rotate(-45deg) translateY(-2px)
+    @media(max-width: 1050px)
+      display: flex
+.shop_menu
+  min-width: 230px
+  max-width: 230px
+  padding: 100px 40px
+  background-color: rgba(245, 247, 250, 1)
+  display: block
+  transition: all .3s
+  @media(max-width: 1050px)
+    position: absolute
+    opacity: 0
+    transform: translateX(-100%)
+  .categories
+    margin-bottom: 50px
+
+    ul
+      h5
+        margin-bottom: 40px
+      li
+        margin-bottom: 30px
+        padding: 0 15px
+
+        a
+          text-decoration: none
+          color: rgba(149, 149, 149, 1)
+          transition: color .5s
+          &:hover
+            color: rgba(251, 183, 16, 1)
+  .brands
+    ul
+      h5
+        margin-bottom: 40px
+      li
+        margin-bottom: 30px
+        cursor: pointer
+
+        label
+          color: rgba(149, 149, 149, 1)
+          cursor: pointer
+          transition: color .5s
+          &:hover
+            color: rgba(251, 183, 16, 1)
+
+  .color
+    margin-bottom: 50px
+    h5
+      margin-bottom: 30px
+    ul
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      li
+        a
+          display: block
+          height: 30px
+          width: 30px
+          background-color: rgba(255, 255, 255, 1)
+          border: 1px solid rgba(149, 149, 149, .3)
+          border-radius: 50%
+          margin-right: 7px
+          margin-bottom: 7px
+      li:nth-child(2) a
+         background-color: rgba(150, 150, 150, 1)
+      li:nth-child(3) a
+        background-color: rgba(0, 0, 0, 1)
+      li:nth-child(4) a
+        background-color: rgba(3, 21, 255, 1)
+      li:nth-child(5) a
+        background-color: rgba(220, 6, 71, 1)
+      li:nth-child(6) a
+        background-color: rgba(255, 245, 106, 1)
+      li:nth-child(7) a
+        background-color: rgba(242, 110, 81, 1)
+      li:nth-child(8) a
+        background-color: rgba(154, 135, 119, 1)
+  .price_filter
+    input
+      border: 0
+      color: rgba(251, 183, 16, 1)
+      font-weight: bold

@@ -1,0 +1,69 @@
+.search_block
+  position: fixed
+  top: -350px
+  background-color: rgba(245, 247, 250, 1)
+  width: 100%
+  height: 260px
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: top .5s
+  z-index: 20
+.on_search .search_block
+  top: 0px
+  .close_search
+    border: none
+    position: absolute
+    right: 0
+    top: 0
+    height: 40px
+    width: 40px
+    background-color: rgba(251, 183, 16, 1)
+    cursor: pointer
+    transition: background-color .5s
+
+    &:before
+      content: ""
+      position: absolute
+      top: calc(50% - 3px)
+      left: calc(50% - 3px)
+      transform: rotate(45deg)
+      background-color: rgba(255, 255, 255, 1)
+      height: 3px
+      width: 10px
+    &:after
+      content: ""
+      position: absolute
+      top: calc(50% - 3px)
+      left: calc(50% - 3px)
+      transform: rotate(-45deg)
+      background-color: rgba(255, 255, 255, 1)
+      height: 3px
+      width: 10px
+    &:hover
+      background-color: rgba(0, 0, 0, 1)
+  .search__wrapper
+    max-width: 1100px
+    height: 60px
+    width: 100%
+    position: relative
+    margin: 0 25px
+    .search_image
+      background: none
+      position: absolute
+      left: 10px
+      top: calc(50% - 10px)
+      cursor: pointer
+      outline: none
+      border: none
+    .search_line
+      width: 100%
+      height: 100%
+      border: none
+      font-family: 'helveticaneue_medium', sans-serif
+      font-size: 14px
+      padding: 0 50px
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.075)
+      outline: none
+
+
